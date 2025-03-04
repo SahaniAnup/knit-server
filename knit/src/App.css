@@ -1,0 +1,205 @@
+body{ 
+  background-color:#e4abb3;
+  
+}
+
+header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: 	#f8e9e9;
+  padding:2px 0px;
+  z-index: 10000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition:0.5s;
+}
+
+header .sticky{
+background: #fff;
+padding:10px 100px;
+box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+}
+header .logo{
+width:200px;
+height:50px;
+padding-left: 10px;
+}
+header .navigation{
+position: relative;
+display: flex;
+padding-right: 50px;
+}
+header .navigation li{
+list-style: none;
+margin-left: 30px;
+padding-top: 10px;
+}
+header .navigation li a{
+text-decoration: none;
+color:#be3e77;
+font-weight: 300;
+padding-top: 10px;
+}
+
+header .sticky .navigation li a{
+color: #111;
+}
+header .navigation li a :hover{
+color: #111;
+}
+.dt{
+font-size:1.4em;
+font-family: 'Francois One'
+
+}
+
+.dt:hover{
+  color: #666
+}
+/* Style for the links */
+.login,
+.regi {
+ 
+  margin-right: 20px; /* Adjust as needed */
+  font-size: 1.4em; /* Set font size */
+  font-family: 'Francois One' /* Set font family */
+}
+
+/* Style for the icons */
+.AiOutlineLogin,
+.AiOutlineUserAdd {
+  margin-right: 5px; /* Adjust as needed */
+  vertical-align: middle;
+}
+
+/* Hover effect */
+.login:hover,
+.regi:hover {
+  color: #666; /* Adjust hover color as needed */
+}
+
+/* Style for the button */
+.logout-btn {
+  font-size: 1.4em;
+  font-family: 'Francois One';
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  color: #be3e77; /* Adjust color as needed */
+}
+
+/* Icon styling */
+.logout-icon {
+  margin-right: 5px; /* Adjust as needed */
+  vertical-align: middle;
+
+}
+
+/* Hover effect */
+.logout-btn:hover {
+  color: #666; /* Adjust hover color as needed */
+}
+
+.user-container{
+  display: flex;
+    align-items: center;
+}
+
+/* Style for the user info */
+.user-info {
+  font-size: 1.4em;
+  font-family: 'Francois One';
+  color: #be3e77; /* Adjust color as needed */
+  padding-top: 10px;
+ 
+}
+
+/* Icon styling */
+.user-icon {
+  margin-right: 5px;
+  padding-top: 10px;
+  
+  font-size: 2.5em;
+  color: #be3e77;
+  
+}
+
+
+section{
+padding: 100px;
+}
+.back-video{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  padding:0 ;
+  top: 0px;
+  
+  animation: fade-in 1s;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 100;
+  }
+}
+@media (min-aspect-ratio:16/9){
+  .back-video{
+        width: 100%;
+        height: 107%;
+  }
+  @media (max-width:16/9){
+        .back-video{
+              width: 100%;
+              height: 107%;
+        }
+}
+}
+
+
+
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
